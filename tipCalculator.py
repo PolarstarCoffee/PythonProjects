@@ -7,5 +7,6 @@ tipConvert = float(tip) / 100
 totalWTip = float(total) * float(tip)
 totalPerPersonTipped = float(splitCost) * float(tipConvert) + float(splitCost)
 EndProduct = round(totalPerPersonTipped,2)
+EndProduct = "{:.2f}".format((EndProduct))
 print(f"Each person should pay: {EndProduct}$")
 
